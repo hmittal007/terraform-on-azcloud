@@ -1,0 +1,20 @@
+az login
+#command to login to az cloud programatically.
+
+az account list
+#List the azure account.
+
+az account set --subscription="SUBSCRIPTION_ID"
+#setting up the correct account to work on by using SUBSCRIPTION_ID
+
+az account set -s "SUBSCRIPTION_Name"
+#setting up the correct account to work on by using SUBSCRIPTION_Name
+
+az group list --query "[][name]" -o tsv
+# to check the resource groups in your seleceted subscription
+
+az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/SUBSCRIPTION_ID"
+#creating a service principal account that can be used by terraform provider to be authenticated by Azure
+
+az logout
+#command to logout the azure cli
