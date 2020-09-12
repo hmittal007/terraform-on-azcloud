@@ -1,5 +1,3 @@
 9.31 Defining environment variables in agent jobs (secrets are visible).
-9.32 Using environment variables in agent job in form of other variables defined in variables group.
-9.33 Using export command to define environment variablesin form of other variables defined in variables group.
-
-
+9.32 Using environment variables in agent job in form of other variables defined in variable group.
+9.33 Using export command to define environment variables in form of other variables defined in variable group.

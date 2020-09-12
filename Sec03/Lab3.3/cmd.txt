@@ -1,0 +1,3 @@
+terraform plan -destroy // to determine the order in which things must be destroyed
+terraform destroy // to destroy with acknowledgement
+terraform destroy -auto-apply // to destroy without acknowledgement

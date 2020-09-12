@@ -1,0 +1,7 @@
+terraform fmt //Rewrites config files to canonical format
+Terraform validate //Validates the Terraform configuration files
+Terraform providers  // to print the tree of the all the providers used in the configuration
+Terraform show //to inspect the terraform state or plan file.
+terraform plan -out=newplan //save the plan 
+terraform apply "newplan" //and apply it in next step.
+terraform apply -auto-approve

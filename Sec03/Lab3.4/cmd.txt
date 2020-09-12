@@ -1,0 +1,4 @@
+You can manually taint resources with the taint command. you might come accross when some resources are not working as expected
+when you will generate your next execution plan, terraform will remove any tainted resources and create new resources.
+terraform taint
+terraform untaint

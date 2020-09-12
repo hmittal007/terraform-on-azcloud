@@ -14,7 +14,7 @@ az group list --query "[][name]" -o tsv
 # to check the resource groups in your seleceted subscription
 
 az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/SUBSCRIPTION_ID"
-#use this command to create a service principal account that can be used by terraform provider to be authenticated by Azure
+#creating a service principal account that can be used by terraform provider to be authenticated by Azure
 
 az logout
 #command to logout the azure cli
