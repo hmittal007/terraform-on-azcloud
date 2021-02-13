@@ -3,6 +3,8 @@ vm jbox-vm01
 nic jbox-nic
 nsg jbox-nsg*/
 
+# Please use terraform v12.29 to start with for all labs, I will use terraform v13 and v14 from lab 7.5 onwards
+
 resource "azurerm_resource_group" "jbox-rg" {
   name     = "jbox-rg"
   location = "westeurope"

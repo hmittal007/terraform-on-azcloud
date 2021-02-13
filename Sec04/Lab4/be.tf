@@ -5,6 +5,8 @@ nsg web-nsg
 nic web-nic
 vm web-vm01*/
 
+# Please use terraform v12.29 to start with for all labs, I will use terraform v13 and v14 from lab 7.5 onwards
+
 resource "azurerm_resource_group" "be-rg" {
   name     = "Be-rg"
   location = "westeurope"

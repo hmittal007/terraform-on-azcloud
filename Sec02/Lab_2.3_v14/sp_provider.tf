@@ -13,7 +13,17 @@ you can test these login details by running this command
 az login --service-principal -u CLIENT_ID -p CLIENT_SECRET --tenant TENANT_ID
 */
 
-# Please use terraform v12.29 to start with for all labs, I will use terraform v13 from lab 7.5 onwards
+# Please use terraform v14, we will learn more about terraform v 14 later in lab 7.6
+
+terraform {
+  required_providers {
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = "~> 2.18"
+    }
+  }
+}
+
 provider "azurerm" {
   # Whilst version is optional, we /strongly recommend/ using it to pin the version of the Provider being used
   version = "=2.4.0"

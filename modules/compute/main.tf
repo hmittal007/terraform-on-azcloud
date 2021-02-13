@@ -9,11 +9,13 @@ resource "azurerm_network_interface" "compute" {
     private_ip_address_allocation = "Dynamic"
   }
 }
+
 resource "azurerm_network_security_group" "compute" {
   name                = "${var.vm-name}-nsg"
   location            = var.location
   resource_group_name = var.rg
 }
+
 resource "azurerm_virtual_machine" "compute" {
   name                  = "${var.vm-name}-vm01"
   location            = var.location
