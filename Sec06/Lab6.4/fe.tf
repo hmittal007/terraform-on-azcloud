@@ -3,6 +3,7 @@ resource "azurerm_resource_group" "fe-rg" {
   location = var.location-name
 }
 
+#https://registry.terraform.io/modules/Azure/vnet/azurerm/2.1.0
 module "fe-vnet" {
   source              = "Azure/vnet/azurerm"
   vnet_name= "${var.env}-Fe-vnet"

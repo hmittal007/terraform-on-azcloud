@@ -3,6 +3,7 @@ resource "azurerm_resource_group" "jbox-rg" {
   location = var.location-name
 }
 
+#https://registry.terraform.io/modules/Azure/vnet/azurerm/2.1.0
 module "jbox-vm" {
   source = "../../modules/compute"
   vm-name = "${var.env}-Jbox"
