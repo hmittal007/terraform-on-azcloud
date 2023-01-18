@@ -1,2 +1,2 @@
-vtenant_id = 
-vsubscription_id = 
+vtenant_id = ""
+vsubscription_id = ""
